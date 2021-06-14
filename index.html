@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <!-- Links to Styling snd Fonts Framwork -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+  <header class = "bg-primary text-white text-center p-2">
+      <h1>Weather Dashboard</h1>
+  </header>
+  <!-- Searching Engine Card -->
+  <main class="container-fluid">
+      <div class = "row">
+          <div class="col-12 col-md-3 p-2 search-column">
+              <form class = "border p-2" id = "city-search-form">
+                  <h4>Enter City Name</h2>
+                  <input id="city" type = "text" autofocus = "true" class = "form-input"/>
+                  <button class = "btn btn-primary" type = "submit">Search</button>
+              </form>
+              <!-- Clear Search History  Button -->
+              <div class = "past-search border" id = "past-search-buttons"></div>
+              <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
+              <form id="history"></form>
+          </div>
+
+          <!-- Searching Engine Card Results-->
+          <div class="col-12 col-md-9">
+              <div class = "row border selected-city" id = "current-forecast">
+                  <div class = "col-12">
+                      <h2 id="searched-city"></h2>
+                      <div id = "current-weather-container" class = "list-group"></div>
+                  </div>  
+              </div>
+              <div class = "row border" id = "five-day-forecast">
+                      <h2 class= "col-12" id = "forecast"></h2>
+                      <div class = "d-flex" id = "fiveday-container"></div>
+              </div>  
+          </div>
+      </div>
+  </main>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+ <!-- Local JS -->
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
