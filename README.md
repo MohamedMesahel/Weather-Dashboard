@@ -12,7 +12,7 @@ Weather-Dashboard is an application to find a weather condition of a given city 
 * UV %
 
 ## Challenges
-I has a problem configuring the github pages with the submited files but at the end I was able to fix it.
+I had a problem configuring the github pages with the submited files but at the end I was able to fix it.
 If the Open Weather Map fails to find a city that matches what the user typed, no feedback is provided to the user. 
 
 ## User Story
