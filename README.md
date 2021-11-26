@@ -5,10 +5,10 @@
 [![Website shields.io](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](http://shields.io/)
 [![Website shields.io](https://badges.aleen42.com/src/javascript.svg)](http://shields.io/)
 [![Website shields.io](https://img.shields.io/badge/LICENSE-MIT-green)](http://shields.io/)
-
+[![Website shields.io](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](http://shields.io/)
 # Weather-Dashboard
 
-Weather dashboard that will run in the browser and feature dynamically updated HTML and CSS and built to display the current weather in a city of user choice within (5) days forecast using open source Weather API.
+Weather dashboard that will run in the browser and feature dynamically updated HTML/BootStrap and CSS and built to display the current weather in a city of user choice within (5) days forecast using open source Weather API.
 ## Table of Contents
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -110,6 +110,7 @@ Distributed under the MIT License.
 ## Acknowledgments
 
 List for some useful resources!
+* [BootStrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 * [Open Weather free API](https://openweathermap.org/api)
 * [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys).
 
