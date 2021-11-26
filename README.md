@@ -8,7 +8,7 @@
 
 # Weather-Dashboard
 
-Weather dashboard that will run in the browser and feature dynamically updated HTML and CSS and built to display the current weather in a city of user choice within (5) days forecast.
+Weather dashboard that will run in the browser and feature dynamically updated HTML and CSS and built to display the current weather in a city of user choice within (5) days forecast using open source Weather API.
 ## Table of Contents
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -56,7 +56,7 @@ In order to use this application and check the weather, you can download the zip
 
 ### Built With
 
-HTML, CSS and JavaScript.
+HTML, CSS and JavaScript by using OpenWeather API.
 * code snippet
 ```js
 var formSumbitHandler = function(event){
@@ -111,6 +111,7 @@ Distributed under the MIT License.
 
 List for some useful resources!
 * [Open Weather free API](https://openweathermap.org/api)
+* [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys).
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
