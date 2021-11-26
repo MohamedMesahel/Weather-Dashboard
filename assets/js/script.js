@@ -13,6 +13,7 @@ var pastSearchButtonEl = document.querySelector("#past-search-buttons");
 // Declare Input Function
 var formSumbitHandler = function(event){
     event.preventDefault();
+    
     var city = cityInputEl.value.trim();
     if(city){
         getCityWeather(city);
@@ -32,6 +33,7 @@ var saveSearch = function(){
 
 // Declaring and Establishing the Call Function to Openweather  
 var getCityWeather = function(city){
+    
     var apiKey = "8a53c204fdc7aafec86bf779403642e0"
     var apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
 
@@ -178,13 +180,14 @@ var pastSearch = function(pastSearch){
     pastSearchEl.textContent = pastSearch;
     pastSearchEl.classList = "d-flex w-100 btn-light border p-2";
     pastSearchEl.setAttribute("data-city",pastSearch)
-    pastSearchEl.setAttribute("type", "submit");
+    cityFormEl.setAttribute("type", "submit");
 
     pastSearchButtonEl.prepend(pastSearchEl);
 }
 
 
 var pastSearchHandler = function(event){
+    
     var city = event.target.getAttribute("data-city")
     if(city){
         getCityWeather(city);
